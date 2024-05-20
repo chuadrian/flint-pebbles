@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+</head>
+
+
+<body>
+
+    
+    <div class="preloader" data-preloader>
+        <div class="preloader-circle"></div>
+      </div>
+
+
+    <nav class="navbar navbar-expand-md navbar-light pt-4 pb-4 bg-light sticky-top">
+        <div class="container-xl">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand" href="index.html">
+            <span class="text-secondary fw-bold  fs-5">
+                
+                Flint & Pebbles Ventures.
+            </span>
+          </a>
+          
+          <!-- toggle button for mobile nav -->
+          <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link mx-2 "  href="index.html">Home</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#">Shops</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 active" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="contact.html">Contact</a>
+              </li>
+              
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle mx-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item text-center" href="#">Vitafoam</a></li>
+                  <hr class="my-0">
+                  <li><a class="dropdown-item text-center" href="#">SaraFoam</a></li>
+                  <hr class="my-0">
+                  <li><a class="dropdown-item text-center" href="#">Green Earth</a></li>
+                  <hr class="my-0">
+                  <li><a class="dropdown-item text-center" href="#">Pillows</a></li>
+                </ul>
+              </div>
+              
+              
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- About section -->
+<section class="py-3 py-md-5">
+    <div class="container">
+      <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+        <div class="col-12 col-lg-6 col-xl-5">
+          <img class="img-fluid rounded" loading="lazy" src="images/pexels-polina-tankilevitch-3875130.jpg" alt="About 1">
+        </div>
+        <div class="col-12 col-lg-6 col-xl-7">
+          <div class="row justify-content-xl-center">
+            <div class="col-12 col-xl-11">
+              <h2 class="mb-3">Who Are We?</h2>
+              <p class="lead fs-4 text-secondary mb-3">We help people to build incredible brands and superior products. Our perspective is to furnish outstanding captivating services.</p>
+              <p class="mb-5">We are a fast-growing company, but we have never lost sight of our core values. We believe in collaboration, innovation, and customer satisfaction. We are always looking for new ways to improve our products and services.</p>
+              <div class="row gy-4 gy-md-0 gx-xxl-5X">
+                <div class="col-12 col-md-6">
+                  <div class="d-flex">
+                    <div class="me-4 text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                        </svg>
+                    </div>
+                    <div>
+                      <h2 class="h4 mb-3">Versatile Brand</h2>
+                      <p class="text-secondary mb-0">We are crafting a digital method that subsists life across all mediums.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="d-flex">
+                    <div class="me-4 text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                        <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h2 class="h4 mb-3">Digital Agency</h2>
+                      <p class="text-secondary mb-0">We believe in innovation by merging primary with elaborate ideas.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <footer style="background-color: #deded5" class="mt-5">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-15 mb-4">
+          <h5 class="mb-3 text-primary" style="letter-spacing: 2px; ">Flint & Pebbles Ventures</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3 text-primary" style="letter-spacing: 2px;">Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" style="color: #4f4f4f;">Frequently Asked Questions</a>
+            </li>
+            <li class="mb-1">
+              <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" style="color: #4f4f4f;">Special Delivery</a>
+            </li>
+            <li class="mb-1">
+              <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" style="color: #4f4f4f;">Pricing</a>
+            </li>
+            <li>
+              <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" style="color: #4f4f4f;">Where we deliver?</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-1 text-primary" style="letter-spacing: 2px; ">Opening Hours</h5>
+          <table class="table" style="color: #4f4f4f; border-color: #666;">
+            <tbody>
+              <tr>
+                <td>Mon - Fri: </td>
+                <td>8am - 6:30pm</td>
+              </tr>
+              <tr>
+                <td>Sat: </td>
+                <td>8am - 6:30pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-dark" href="#">Home</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+
+
+
+    <!--offcanvas-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="sidebar-label">Frequently Asked Questions</h5>
+          <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <h3>Delivery</h3>  
+          <p>For special mattress sizes or other custom orders, please allow a maximum of seven working days for delivery, as we ensure each order is handled with care and precision.</p>
+          <hr>
+          <h3>Pricing</h3>
+          <p>We offer our products at wholesale prices, ensuring that you receive exceptional value for your purchase. Shop with us for quality mattresses at affordable wholesale rates, without compromising on comfort or quality.</p>
+          <hr>
+          <h3>Where we Deliver</h3>
+          <p>At present, we exclusively deliver within Lagos. However, we are actively working to expand our delivery reach to serve more customers across Nigeria, ensuring everyone can enjoy our premium products and services.</p>
+          <!--dropdown-->
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="contact-dropdown" data-bs-toggle="dropdown">Speak To Our Staff</button>
+          <ul class="dropdown-menu" aria-labelledby="contact-dropdown">
+            <li><a href="#" class="dropdown-item">+234 000 0000 000</a></li>
+            <li><a href="#" class="dropdown-item">+234 000 0000 000</a></li>
+            <li><a href="#" class="dropdown-item">+234 000 0000 000</a></li>
+          </ul>
+        </div>
+        </div>
+        
+      </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <script src="script.js"></script>
+</body>
+</html>
