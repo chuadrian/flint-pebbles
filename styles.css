@@ -1,0 +1,38 @@
+
+
+
+body{
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: wavy;
+}
+
+.preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fcfcfa;
+  display: grid;
+  place-items: center;
+  z-index: 6;
+}
+.preloader.loaded{
+  display: none;
+}
+.preloader-circle{
+  width: 60px;
+  height: 60px;
+  border: 8px solid transparent;
+  border-block-color: orangered;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading{
+  0% {transform: rotate(0);}
+  100% {transform: rotate(1turn);}
+}
