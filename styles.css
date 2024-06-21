@@ -27,7 +27,7 @@ a{
   width: 60px;
   height: 60px;
   border: 8px solid transparent;
-  border-block-color: orangered;
+  border-block-color: #0d6efd;
   border-radius: 50%;
   animation: loading 1s linear infinite;
 }
