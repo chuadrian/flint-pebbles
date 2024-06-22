@@ -164,20 +164,22 @@
 
 
       <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered"> 
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="images/undraw.webp" class="img-fluid" alt="">
+              <img src="images/undraw.webp" class="img-fluid" alt="">
               <p class="my-0">Be the first to know! Sign up for updates on our latest mattresses, designed for ultimate comfort and quality sleep.</p>
               <label for="modal-email" class="form-label">Your email address:</label>
-              <input type="text" class="form-control" id="modal-email" placeholder="e.g. adrian@example.com">
+              <input type="email" class="form-control" id="modal-email" placeholder="e.g. adrian@example.com" required>
+              <label for="modal-text" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="modal-text" placeholder="Adrian Pebbles" required>
             </div>
             <div class="modal-footer">
-              <button type="button" id="submit-button" class="btn btn-primary">Submit</button>
+              <button type="button" id="submit-button" class="btn btn-primary" disabled>Submit</button>
             </div>
           </div>
         </div>
