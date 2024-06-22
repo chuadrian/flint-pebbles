@@ -20,39 +20,54 @@ window.addEventListener("load", function () {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-      const submitButton = document.getElementById('submit-button');
+    const submitButton = document.getElementById('submit-button');
+    const emailInput = document.getElementById('modal-email');
+    const nameInput = document.getElementById('modal-text');
 
-      submitButton.addEventListener('click', function handleClick() {
-        // create loader spinner
-        const spinner = document.createElement('div');
-        spinner.classList.add('spinner-border', 'text-light');
-        spinner.setAttribute('role', 'status');
-        spinner.innerHTML = '<span class="visually-hidden">Loading...</span>';
+    function validateInputs() {
+      const email = emailInput.value.trim();
+      const name = nameInput.value.trim();
+      const emailValid = email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+      const nameValid = name.length > 0;
+      
+      submitButton.disabled = !(emailValid && nameValid);
+    }
 
-        // replace button text with spinner
-        submitButton.innerHTML = ''; // Clear any existing text
-        submitButton.appendChild(spinner);
-        submitButton.disabled = true;
+    emailInput.addEventListener('input', validateInputs);
+    nameInput.addEventListener('input', validateInputs);
 
-        setTimeout(() => {
-          submitButton.textContent = 'Success!';
-          submitButton.disabled = false;
+    submitButton.addEventListener('click', function handleClick() {
+      // Create loader spinner
+      const spinner = document.createElement('div');
+      spinner.classList.add('spinner-border', 'text-light');
+      spinner.setAttribute('role', 'status');
+      spinner.innerHTML = '<span class="visually-hidden">Loading...</span>';
 
-          // create and add success message container
-          const successContainer = document.createElement('div');
-          successContainer.classList.add('alert', 'alert-success', 'd-flex', 'justify-content-center', 'align-items-center', 'mt-3');
+      // Replace button text with spinner
+      submitButton.innerHTML = ''; // Clear any existing text
+      submitButton.appendChild(spinner);
+      submitButton.disabled = true;
 
-          const successIcon = document.createElement('span');
-          successIcon.classList.add('bi', 'bi-check-circle-fill', 'me-2');
+      setTimeout(() => {
+        submitButton.textContent = 'Success!';
+        submitButton.disabled = false;
 
-          const successText = document.createElement('span');
-          successText.textContent = 'You have successfully signed up!';
+        // Create and add success message container
+        const successContainer = document.createElement('div');
+        successContainer.classList.add('alert', 'alert-success', 'd-flex', 'justify-content-center', 'align-items-center', 'mt-3');
 
-          successContainer.appendChild(successIcon);
-          successContainer.appendChild(successText);
+        const successIcon = document.createElement('span');
+        successIcon.classList.add('bi', 'bi-check-circle-fill', 'me-2'); // Add Bootstrap icon
 
-          const modalBody = submitButton.closest('.modal-content').querySelector('.modal-body');
-          modalBody.appendChild(successContainer);
-        }, 2000);
-      });
+        const successText = document.createElement('span');
+        successText.textContent = 'You have successfully signed up!';
+
+        successContainer.appendChild(successIcon);
+        successContainer.appendChild(successText);
+
+        const modalBody = submitButton.closest('.modal-content').querySelector('.modal-body');
+        modalBody.appendChild(successContainer);
+      }, 2000);
     });
+});
+  
